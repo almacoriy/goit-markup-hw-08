@@ -1,0 +1,37 @@
+.nav__list {
+	@extend %list;
+	@include centeredFlex();
+
+	margin-bottom: 50px;
+}
+
+.nav__item {
+	margin: 0;
+
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
+}
+
+.nav__button {
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	padding: 6px 22px;
+
+	@include font(500, 16px, 26px);
+	text-align: center;
+	background-color: var(--secondary-bg-color);
+	color: #212121;
+
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent-link-color);
+		color: var(--third-text-color);
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+}

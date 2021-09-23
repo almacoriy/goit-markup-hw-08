@@ -1,0 +1,36 @@
+.footer-contacts {
+	margin: 0px 70px 0px 0px;
+	align-self: baseline;
+}
+
+.footer__logo {
+	@extend %link;
+	display: block;
+	margin-bottom: 20px;
+
+	color: var(--accent-link-color);
+}
+
+.footer__logo--color {
+	color: var(--third-text-color);
+}
+
+.address {
+	font-style: normal;
+}
+
+.footer-contacts__list {
+	@extend %list;
+}
+
+.footer-contacts__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+$addressIitems: "adds", "mail", "tel";
+@include footerAddressItem($addressIitems);
+
+.footer-contacts__mail,
+.footer-contacts__tel {
+	color: rgba(255, 255, 255, 0.6);
+}

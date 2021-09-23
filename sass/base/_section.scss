@@ -1,0 +1,12 @@
+/* -------Паддинги для секций------- */
+.section {
+	@media screen and (min-width: 468px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: var(--desktop-section-padding);
+		padding-bottom: var(--desktop-section-padding);
+	}
+}

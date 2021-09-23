@@ -1,0 +1,27 @@
+.header {
+	border-color: var(--main-bg-color);
+	border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+	@include centeredFlex();
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.header__logo {
+	@extend %link;
+
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+
+.header__logo--color {
+	color: #000000;
+}

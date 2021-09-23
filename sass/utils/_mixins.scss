@@ -1,0 +1,36 @@
+// Стили шрифтов
+
+@mixin font($fw, $fs, $lh, $ls: 0.03em) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh / $fs;
+	letter-spacing: $ls;
+}
+
+// Флекс-центрирование элементов
+
+@mixin centeredFlex($type: flex) {
+	display: $type;
+	justify-content: center;
+	align-items: center;
+}
+
+// Адрес-лист футера
+
+@mixin footerAddressItem($addressList) {
+	@each $addressItem in $addressList {
+		.footer-contacts__#{$addressItem} {
+			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+			@extend %link;
+			@include font(400, 14px, 24px);
+
+			color: var(--third-text-color);
+
+			&:hover,
+			&:focus {
+				color: var(--accent-link-color);
+			}
+		}
+	}
+}

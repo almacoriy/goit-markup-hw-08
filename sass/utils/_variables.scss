@@ -1,0 +1,23 @@
+// Палитра цветов
+
+:root {
+	--main-text-color: #757575;
+	--secondary-text-color: #212121;
+	--third-text-color: #ffffff;
+	--accent-link-color: #2196f3;
+	--main-bg-color: #ffffff;
+	--secondary-bg-color: #f5f4fa;
+	--hero-footer-bg-color: #2f303a;
+
+	--first-icon-color: #afb1b8;
+	--secondary-icon-color: #ffffff;
+
+	--margin: 30px;
+	--desktop-section-padding: 94px;
+	--card-set-gap: 30px;
+}
+
+// Набор шрифтов
+
+$primeryFont: "Roboto", sans-serif;
+$secondaryColor: "Raleway", sans-serif;
