@@ -2,12 +2,17 @@
 	margin-left: 0;
 	margin-right: 0;
 
-	@include font(700, 28px, 33px, 0.03em);
 	text-align: center;
 	color: var(--secondary-text-color);
 
-	@media screen and (min-width: 480px) {
-		margin-bottom: var(--margin-bottom);
+	@media screen and (max-width: 1199px) {
+		margin-bottom: var(--margin);
+		@include font(700, 28px, 33px, 0.03em);
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+		@include font(700, 36px, 42px, 0.03em);
 	}
 }
 
@@ -15,27 +20,41 @@
 	@extend %list;
 	display: flex;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (max-width: 1199px) {
 		flex-wrap: wrap;
 		margin-right: calc(-1 * var(--margin));
 		margin-bottom: calc(-1 * var(--margin));
+	}
+
+	@media screen and (min-width: 1200px) {
+		@include centeredFlex();
 	}
 }
 
 .clients__item {
 	height: 92px;
-	margin: 0;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (max-width: 767px) {
 		flex-basis: calc(100% / 2 - var(--margin));
 		margin-right: var(--margin);
 		margin-bottom: var(--margin);
+
+		width: 210px;
 	}
 
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-basis: calc(100% / 3 - var(--margin));
+		margin-right: var(--margin);
+		margin-bottom: var(--margin);
+
+		width: 226px;
+	}
 	@media screen and (min-width: 1200px) {
 		&:not(:last-child) {
-			margin-right: 30px;
+			margin-right: var(--margin);
 		}
+		margin-left: 0;
+		width: 170px;
 	}
 }
 

@@ -1,8 +1,22 @@
 .nav__list {
 	@extend %list;
-	@include centeredFlex();
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
 
-	margin-bottom: 50px;
+	@media screen and (min-width: 768px) {
+		@include centeredFlex();
+		margin-bottom: 14px;
+		padding-bottom: 16px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		@include centeredFlex();
+		margin-bottom: 34px;
+		padding-bottom: 16px;
+	}
 }
 
 .nav__item {
@@ -10,6 +24,10 @@
 
 	&:not(:last-child) {
 		margin-right: 8px;
+	}
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 15px;
 	}
 }
 
