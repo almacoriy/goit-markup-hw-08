@@ -6,13 +6,10 @@
 .socials__item {
 	width: 44px;
 	height: 44px;
+	margin: 0;
 
 	&:not(:last-child) {
 		margin-right: 10px;
-	}
-
-	@media screen and (min-width: 480px) {
-		margin: 0;
 	}
 }
 

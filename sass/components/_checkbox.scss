@@ -2,8 +2,11 @@
 	@include centeredFlex();
 
 	margin-bottom: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
+
+	@media screen and (min-width: 1200px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 .checkbox__icon {
@@ -31,9 +34,15 @@
 .checkbox__label {
 	@include centeredFlex();
 
-	@include font(400, 14px, 24px);
-
 	color: var(--main-text-color);
+
+	@media screen and (min-width: 768px) {
+		@include font(400, 12px, 14px);
+	}
+
+	@media screen and (min-width: 1200px) {
+		@include font(400, 14px, 24px);
+	}
 }
 
 .checkbox__policy--decor-link {

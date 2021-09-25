@@ -6,7 +6,7 @@
 	text-align: center;
 	color: var(--secondary-text-color);
 
-	@media screen and (min-width: 480px) and (max-width: 1199px) {
+	@media screen and (max-width: 1199px) {
 		margin-bottom: var(--margin);
 		@include font(700, 28px, 33px);
 	}
