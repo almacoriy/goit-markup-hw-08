@@ -1,6 +1,10 @@
 .site-nav__list {
 	@extend %list;
 	display: flex;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
 .site-nav__item:not(:last-child) {
