@@ -28,7 +28,7 @@
 	margin-left: 0;
 	margin-right: 0;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		&:not(:last-child) {
 			margin-bottom: var(--margin);
 		}
@@ -82,7 +82,7 @@
 	text-transform: uppercase;
 	color: var(--secondary-text-color);
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		text-align: center;
 	}
 }
@@ -91,7 +91,7 @@
 	max-width: 270px;
 	@include font(400, 14px, 24px);
 
-	@media screen and (min-width: 468px) {
+	@media screen and (min-width: 480px) {
 		max-width: 450px;
 	}
 }

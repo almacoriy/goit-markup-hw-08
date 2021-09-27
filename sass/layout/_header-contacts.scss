@@ -1,7 +1,7 @@
 .header-contacts {
 	@extend %list;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		display: none;
 	}
 
@@ -19,12 +19,15 @@
 }
 
 .header-contacts__item {
-	@media screen and (min-width: 768px) {
-		margin: 0 0 10px 0;
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		margin: 0;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
 	}
 
-	&:not(:last-child) {
-		@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1200px) {
+		&:not(:last-child) {
 			margin-right: 50px;
 		}
 	}

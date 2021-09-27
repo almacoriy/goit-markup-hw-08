@@ -7,6 +7,10 @@
 	}
 }
 
+.card-set__item:last-child {
+	margin-left: 0;
+}
+
 .card-set--margin {
 	@media screen and (min-width: 768px) {
 		margin-right: calc(-1 * var(--card-set-gap));

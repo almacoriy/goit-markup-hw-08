@@ -34,7 +34,7 @@
 
 	color: var(--main-text-color);
 
-	@media screen and (max-width: 1199px) {
+	@media screen and (max-width: 1200px) {
 		@include font(400, 12px, 14px);
 	}
 
