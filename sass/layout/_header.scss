@@ -4,26 +4,35 @@
 }
 
 .header__container {
-	@include centeredFlex();
+	@media screen and (min-width: 768px) {
+		@include centeredFlex();
+	}
 }
 
 .header__nav {
-	display: flex;
-	align-items: center;
 	margin-left: 0;
 	margin-right: 0;
+
+	@media screen and (min-width: 768px) {
+		@include centeredFlex();
+	}
 }
 
 .header-mobile {
 	@media screen and (max-width: 768px) {
 		display: flex;
-
-		padding: 16px 0px 16px 15px;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 
 .header__logo {
 	@extend %link;
+
+	@media screen and (max-width: 768px) {
+		margin: 0;
+		padding: 16px 0px 16px 15px;
+	}
 
 	@media screen and (min-width: 768px) {
 		margin-right: 88px;
