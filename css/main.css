@@ -12,6 +12,7 @@
   --margin: 30px;
   --desktop-section-padding: 94px;
   --card-set-gap: 30px;
+  --card-set-gap-bottom: 15px;
 }
 
 /* -------Ресет стилей списков------ */
@@ -681,6 +682,12 @@ img {
   padding-left: 40px;
 }
 
+@media screen and (max-width: 480px) {
+  .menu-nav {
+    margin-bottom: 110px;
+  }
+}
+
 .menu-nav__list {
   display: flex;
   flex-direction: column;
@@ -722,6 +729,12 @@ img {
 .menu-contacts {
   margin-bottom: 64px;
   padding-left: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-contacts {
+    margin-bottom: 45px;
+  }
 }
 
 .menu-contacts__tel {
@@ -815,7 +828,7 @@ img {
 @media screen and (max-width: 480px) {
   .menu-socials__list--margin {
     margin-right: calc(-1 * var(--card-set-gap));
-    margin-bottom: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap-bottom));
   }
 }
 
@@ -823,7 +836,7 @@ img {
   .menu-socials__item--margin {
     flex-basis: calc(100% / 2 - var(--card-set-gap));
     margin-right: var(--card-set-gap);
-    margin-bottom: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap-bottom);
   }
 }
 

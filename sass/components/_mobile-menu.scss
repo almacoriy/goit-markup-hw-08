@@ -70,6 +70,10 @@
 	margin-bottom: 302px;
 	padding-right: 83px;
 	padding-left: 40px;
+
+	@media screen and (max-width: 480px) {
+		margin-bottom: 110px;
+	}
 }
 
 .menu-nav__list {
@@ -114,6 +118,10 @@
 .menu-contacts {
 	margin-bottom: 64px;
 	padding-left: 40px;
+
+	@media screen and (max-width: 480px) {
+		margin-bottom: 45px;
+	}
 }
 
 .menu-contacts__list {
@@ -204,7 +212,7 @@
 .menu-socials__list--margin {
 	@media screen and (max-width: 480px) {
 		margin-right: calc(-1 * var(--card-set-gap));
-		margin-bottom: calc(-1 * var(--card-set-gap));
+		margin-bottom: calc(-1 * var(--card-set-gap-bottom));
 	}
 }
 
@@ -212,7 +220,7 @@
 	@media screen and (max-width: 480px) {
 		flex-basis: calc(100% / 2 - var(--card-set-gap));
 		margin-right: var(--card-set-gap);
-		margin-bottom: var(--card-set-gap);
+		margin-bottom: var(--card-set-gap-bottom);
 	}
 }
 
