@@ -347,7 +347,7 @@ img {
   cursor: pointer;
 }
 
-.form__input:focus-within {
+.form__input:focus-within, .form__input:hover {
   border-color: var(--accent-link-color);
 }
 
@@ -358,8 +358,13 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__field:focus-within .form__icon {
+.form__input:focus-within + .form__icon,
+.form__input:hover + .form__icon {
   fill: var(--accent-link-color);
+}
+
+.comment__text:focus-within, .comment__text:hover {
+  border-color: var(--accent-link-color);
 }
 
 .form__button {
