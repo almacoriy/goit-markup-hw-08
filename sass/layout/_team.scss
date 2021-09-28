@@ -6,7 +6,7 @@
 	text-align: center;
 	color: var(--secondary-text-color);
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1199px) {
 		margin-bottom: var(--margin);
 		@include font(700, 28px, 33px);
 	}
@@ -20,11 +20,11 @@
 .team__list {
 	@extend %list;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 767px) {
 		display: flex;
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		flex-wrap: wrap;
 		margin-right: calc(-1 * var(--margin));
 		margin-bottom: calc(-1 * var(--margin));
@@ -42,13 +42,13 @@
 		margin-bottom: var(--margin);
 	}
 
-	@media screen and (min-width: 480px) and (max-width: 768px) {
+	@media screen and (min-width: 480px) and (max-width: 767px) {
 		&:not(:last-child) {
 			margin-bottom: var(--margin);
 		}
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 768px) {
+	@media screen and (min-width: 768px) and (max-width: 767px) {
 		flex-basis: calc(100% / 2 - var(--margin));
 		margin-right: var(--margin);
 		margin-bottom: var(--margin);
@@ -66,7 +66,7 @@
 }
 
 .team-member__content {
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		padding-bottom: 24px;
 	}
 

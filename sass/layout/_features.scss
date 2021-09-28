@@ -7,7 +7,7 @@
 .features__list {
 	@extend %list;
 
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
 		flex-wrap: wrap;
 		margin-right: calc(-1 * var(--margin));
@@ -28,7 +28,7 @@
 	margin-left: 0;
 	margin-right: 0;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		&:not(:last-child) {
 			margin-bottom: var(--margin);
 		}
@@ -82,7 +82,7 @@
 	text-transform: uppercase;
 	color: var(--secondary-text-color);
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		text-align: center;
 	}
 }

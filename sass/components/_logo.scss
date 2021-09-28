@@ -2,7 +2,7 @@
 	font-family: $secondaryFont;
 	color: var(--accent-link-color);
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1199px) {
 		@include font(700, 24px, 28px);
 	}
 
