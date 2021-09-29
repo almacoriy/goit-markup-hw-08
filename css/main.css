@@ -656,10 +656,10 @@ img {
   transform: translateX(0);
 }
 
-.mobile-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+@media screen and (max-width: 767px) {
+  .mobile-header {
+    display: flex;
+  }
 }
 
 .menu__logo {
@@ -672,9 +672,11 @@ img {
 }
 
 .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
-  padding: 10px 15px 10px 0px;
   cursor: pointer;
   border: none;
   background-color: var(--main-bg-color);
@@ -888,17 +890,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .header-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .header__logo {
     margin: 0;
-    padding: 16px 0px 16px 15px;
+    padding: 16px 0px 16px;
   }
 }
 
@@ -1189,19 +1183,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .features__thumb {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .features__thumb {
-    width: 354px;
+    max-width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__thumb {
-    width: 270px;
+    max-width: 270px;
   }
 }
 
@@ -1290,6 +1284,10 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.team {
+  max-width: 1600px;
+}
+
 .team--bg {
   background-color: var(--secondary-bg-color);
 }
@@ -1319,7 +1317,7 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .team__list {
     display: flex;
   }
@@ -1327,6 +1325,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
+    display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * var(--margin));
     margin-bottom: calc(-1 * var(--margin));
@@ -1340,19 +1339,13 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 479px) {
-  .team__item {
-    margin-bottom: var(--margin);
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
     margin-bottom: var(--margin);
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team__item {
     flex-basis: calc(100% / 2 - var(--margin));
     margin-right: var(--margin);
@@ -1378,6 +1371,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team-member__content {
+    max-width: 270px;
     padding-bottom: 30px;
   }
 }

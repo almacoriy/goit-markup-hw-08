@@ -23,7 +23,7 @@
         <header class="header">
             <div class="container header__container">
                 <nav class="header__nav">
-                    <div class="header-mobile">
+                    <div class="mobile-header">
                         <a class="logo header__logo" href="" lang="en"
                             >Web<span class="header__logo--color">Studio</span>
                         </a>
@@ -41,11 +41,11 @@
                     </div>
                     <ul class="site-nav__list">
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="./index.html">Студия</a>
+                            <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
                         </li>
 
                         <li class="site-nav__item">
-                            <a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфолио</a>
+                            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
                         </li>
 
                         <li class="site-nav__item">
@@ -75,6 +75,7 @@
                 </ul>
             </div>
         </header>
+
         <main>
             <!-- Портфолио -->
             <section class="portfolio section">
@@ -112,13 +113,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-1-min.jpg"
-                                        alt="Технокряк"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-1-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-1-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-1-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-1-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-1-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-1-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-1-mob-min.jpg"
+                                            alt="Технокряк"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -138,13 +161,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-2-min.jpg"
-                                        alt="Постер New Orlean vs Golden Star"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-2-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-2-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-2-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-2-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-2-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-2-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-2-mob-min.jpg"
+                                            alt="Постер New Orlean vs Golden Star"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -167,13 +212,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-3-min.jpg"
-                                        alt="Ресторан Seafood"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-3-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-2-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-3-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-3-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-3-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-3-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-3-mob-min.jpg"
+                                            alt="Ресторан Seafood"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -194,13 +261,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-4-min.jpg"
-                                        alt="Проект Prime"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-4-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-2-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-4-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-4-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-4-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-4-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-4-mob-min.jpg"
+                                            alt="Проект Prime"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -221,13 +310,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-5-min.jpg"
-                                        alt="Проект Boxes"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-5-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-5-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-5-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-5-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-5-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-5-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-5-mob-min.jpg"
+                                            alt="Проект Boxes"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -248,13 +359,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-6-min.jpg"
-                                        alt="Inspiration has no Borde"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-6-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-6-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-6-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-6-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-6-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-6-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-6-mob-min.jpg"
+                                            alt="Inspiration has no Borde"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -275,13 +408,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-7-min.jpg"
-                                        alt="Издание Limited Edition"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-7-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-7-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-7-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-7-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-7-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-7-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-7-mob-min.jpg"
+                                            alt="Издание Limited Edition"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -302,13 +457,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-8-min.jpg"
-                                        alt="Проект LAB"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-8-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-8-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-8-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-8-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-8-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-8-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-8-mob-min.jpg"
+                                            alt="Проект LAB"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -329,13 +506,35 @@
                         <li class="card-set__item card-set__item--margin">
                             <a class="card-set__link link" href="">
                                 <div class="card-set__thumb">
-                                    <img
-                                        class="card-set__image"
-                                        src="./images/portfolio/portfolio-9-min.jpg"
-                                        alt="Growing Business"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./images/portfolio/desktop/portfolio-9-desk-min.jpg    1x,
+                                                ./images/portfolio/desktop/portfolio-9-desk@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./images/portfolio/tablet/portfolio-9-tab-min.jpg    1x,
+                                                ./images/portfolio/tablet/portfolio-9-tab@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./images/portfolio/mobile/portfolio-9-mob-min.jpg    1x,
+                                                ./images/portfolio/mobile/portfolio-9-mob@2x-min.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            class="card-set__image"
+                                            src="./images/portfolio/mobile/portfolio-9-mob-min.jpg"
+                                            alt="Growing Business"
+                                            sizes="100%"
+                                        />
+                                    </picture>
 
                                     <div class="overlay">
                                         <p class="card-set__description">
@@ -367,7 +566,6 @@
                             >Web<span class="footer__logo--color">Studio</span>
                         </a>
 
-                        <!-- Контакты -->
                         <address class="address">
                             <ul class="footer-contacts__list">
                                 <li class="footer-contacts__item">
@@ -391,8 +589,6 @@
                             </ul>
                         </address>
                     </div>
-
-                    <!-- Footer socials -->
 
                     <div class="footer-socials">
                         <b class="footer__title">Присоединяйтесь</b>
@@ -448,8 +644,6 @@
                     </div>
                 </div>
 
-                <!-- Подписка в Футере -->
-
                 <div class="subscribe">
                     <b class="footer__title">Подпишитесь на рассылку</b>
                     <form class="subscribe__form">
@@ -480,11 +674,11 @@
             <div class="menu-nav">
                 <ul class="menu-nav__list">
                     <li class="menu-nav__item">
-                        <a class="menu-nav__link" href="./index.html">Студия</a>
+                        <a class="menu-nav__link menu-nav__link--active" href="./index.html">Студия</a>
                     </li>
 
                     <li class="menu-nav__item">
-                        <a class="menu-nav__link menu-nav__link--active" href="./portfolio.html">Портфолио</a>
+                        <a class="menu-nav__link" href="./portfolio.html">Портфолио</a>
                     </li>
 
                     <li class="menu-nav__item">
