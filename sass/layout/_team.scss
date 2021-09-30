@@ -47,14 +47,14 @@
 		}
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		flex-basis: calc(100% / 2 - var(--margin));
 		margin: 15px;
 	}
 
 	@media screen and (min-width: 1200px) {
 		&:not(:last-child) {
-			margin-right: var (--margin);
+			margin-right: var(--margin);
 		}
 	}
 }

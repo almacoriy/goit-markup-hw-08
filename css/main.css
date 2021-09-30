@@ -700,7 +700,7 @@ img {
 
 @media screen and (max-width: 479px) {
   .menu-nav {
-    margin-bottom: 110px;
+    margin-bottom: 32vh;
   }
 }
 
@@ -761,8 +761,8 @@ img {
 @media screen and (max-width: 479px) {
   .menu-contacts__tel {
     font-weight: 500;
-    font-size: 22px;
-    line-height: 1.18182;
+    font-size: 26px;
+    line-height: 1.23077;
     letter-spacing: 0.02em;
   }
 }
@@ -1332,7 +1332,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     flex-basis: calc(100% / 2 - var(--margin));
     margin: 15px;
@@ -1341,7 +1341,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
-    margin-right: var --margin;
+    margin-right: var(--margin);
   }
 }
 
