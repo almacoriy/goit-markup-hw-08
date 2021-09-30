@@ -29,10 +29,8 @@
 	}
 
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		display: flex;
 		flex-wrap: wrap;
-		margin-right: calc(-1 * var(--margin));
-		margin-bottom: calc(-1 * var(--margin));
+		margin: -15px;
 	}
 }
 
@@ -51,13 +49,12 @@
 
 	@media screen and (min-width: 768px) and (max-width: 1200px) {
 		flex-basis: calc(100% / 2 - var(--margin));
-		margin-right: var(--margin);
-		margin-bottom: var(--margin);
+		margin: 15px;
 	}
 
 	@media screen and (min-width: 1200px) {
 		&:not(:last-child) {
-			margin-right: 30px;
+			margin-right: var (--margin);
 		}
 	}
 }

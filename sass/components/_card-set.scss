@@ -7,34 +7,27 @@
 	}
 }
 
-.card-set__item:last-child {
-	margin-left: 0;
-}
-
 .card-set--margin {
 	@media screen and (min-width: 768px) {
-		margin-right: calc(-1 * var(--card-set-gap));
-		margin-bottom: calc(-1 * var(--card-set-gap));
+		margin: -15px;
 	}
 }
 
 .card-set__item--margin {
 	@media screen and (max-width: 767px) {
 		&:not(:last-child) {
-			margin-bottom: var(--card-set-gap);
+			margin-bottom: var(--margin);
 		}
 	}
 
 	@media screen and (min-width: 768px) {
 		flex-basis: calc(100% / 2 - var(--card-set-gap));
-		margin-right: var(--card-set-gap);
-		margin-bottom: var(--card-set-gap);
+		margin: 15px;
 	}
 
 	@media screen and (min-width: 1200px) {
 		flex-basis: calc(100% / 3 - var(--card-set-gap));
-		margin-right: var(--card-set-gap);
-		margin-bottom: var(--card-set-gap);
+		margin: 15px;
 	}
 }
 

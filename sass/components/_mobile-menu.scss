@@ -155,12 +155,12 @@
 }
 
 .menu-socials {
-	@media screen and (min-width: 480px) {
-		padding: 0px 83px 48px 40px;
-	}
-
 	@media screen and (max-width: 480px) {
 		padding: 0px 40px 48px 40px;
+	}
+
+	@media screen and (min-width: 480px) {
+		padding: 0px 83px 48px 40px;
 	}
 }
 
@@ -204,7 +204,7 @@
 			position: absolute;
 			width: 22px;
 			top: 50%;
-			left: 28vw;
+			left: 31vw;
 
 			border: 1px solid rgba(33, 33, 33, 0.2);
 
@@ -215,16 +215,19 @@
 
 .menu-socials__list--margin {
 	@media screen and (max-width: 479px) {
-		margin-right: calc(-1 * var(--card-set-gap));
-		margin-bottom: calc(-1 * var(--card-set-gap-bottom));
+		margin: -15px;
+
+		// margin-right: calc(-1 * var(--card-set-gap));
+		// margin-bottom: calc(-1 * var(--card-set-gap-bottom));
 	}
 }
 
 .menu-socials__item--margin {
 	@media screen and (max-width: 479px) {
+		margin: 15px;
 		flex-basis: calc(100% / 2 - var(--card-set-gap));
-		margin-right: var(--card-set-gap);
-		margin-bottom: var(--card-set-gap-bottom);
+		// margin-right: var(--card-set-gap);
+		// margin-bottom: var(--card-set-gap-bottom);
 	}
 }
 
