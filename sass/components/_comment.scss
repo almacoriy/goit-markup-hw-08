@@ -1,5 +1,9 @@
 .comment {
 	margin-bottom: 20px;
+
+	@media screen and (max-width: 467px) {
+		margin-bottom: 15px;
+	}
 }
 
 .comment__text {
@@ -27,5 +31,11 @@
 
 	&:focus-within {
 		border-color: var(--accent-link-color);
+	}
+}
+
+@media screen and (max-width: 467px) {
+	.comment__text {
+		height: 85px;
 	}
 }

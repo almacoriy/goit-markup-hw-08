@@ -18,6 +18,12 @@
 	}
 }
 
+.mobile-header {
+	@media screen and (max-width: 767px) {
+		display: flex;
+	}
+}
+
 .header__logo {
 	@extend %link;
 
