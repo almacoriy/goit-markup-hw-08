@@ -124,6 +124,7 @@
 .menu-socials__list {
 	@extend %list;
 	display: flex;
+	max-width: 357px;
 
 	@media screen and (max-width: 479px) {
 		flex-wrap: wrap;
@@ -131,8 +132,9 @@
 }
 
 .menu-socials__item {
-	position: relative;
-	margin-left: 0;
+	display: flex;
+	flex-basis: calc(100% / 4);
+	margin: 0;
 
 	@include font(500, 18px, 22px, 0.02em);
 	color: var(--accent-link-color);
@@ -140,52 +142,36 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
 	.menu-socials__item:not(:last-child) {
-		margin-right: 20px;
+		margin-right: 10px;
+		padding-right: 10px;
 
-		&::after {
-			content: "";
-			position: absolute;
-			width: 22px;
-			top: 50%;
-
-			border: 1px solid rgba(33, 33, 33, 0.2);
-
-			transform: rotate(90deg);
+		&:not(:last-child) {
+			border-right: 1px solid rgba(33, 33, 33, 0.2);
 		}
 	}
 }
 
 @media screen and (max-width: 479px) {
 	.menu-socials__item:nth-child(2n + 1) {
-		&::after {
-			content: "";
-			position: absolute;
-			width: 22px;
-			top: 50%;
-			left: 31vw;
-
-			border: 1px solid rgba(33, 33, 33, 0.2);
-
-			transform: rotate(90deg);
-		}
+		border-right: 1px solid rgba(33, 33, 33, 0.2);
 	}
 }
 
-.menu-socials__list--margin {
-	@media screen and (max-width: 479px) {
-		margin-right: -10px;
-		margin-bottom: -10px;
-	}
-}
-
-.menu-socials__item--margin {
+.menu-socials__item {
 	@media screen and (max-width: 479px) {
 		flex-basis: calc((100% - 2 * 10px) / 2);
-		margin-right: 10px;
 		margin-bottom: 10px;
 	}
 }
 
 .menu-socials__link {
 	@extend %link;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media screen and (max-width: 479px) {
+		margin: o auto;
+	}
 }
